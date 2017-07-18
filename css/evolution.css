@@ -1,0 +1,270 @@
+
+@font-face {
+  font-family: 'LilitaOne';
+  src: url('../fonts/LilitaOne.eot?#iefix') format('embedded-opentype'),  url('../fonts/LilitaOne.woff') format('woff'), url('../fonts/LilitaOne.ttf')  format('truetype'), url('../fonts/LilitaOne.svg#LilitaOne') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/*body{
+  font-family: 'LilitaOne', 'Open Sans', sans-serif;
+}*/
+#videoplay{
+  position: relative;
+}
+
+#videoplay video{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%    !important;
+  height: auto   !important;
+}
+
+.video-content{
+    position: relative;
+    z-index: 2;
+}
+
+/*MARCELLUS*/
+.lilita{
+  font-family: 'LilitaOne','futuregular', "Helvetica Neue", 'Open Sans', sans-serif;
+}
+.navbar{
+	background: none;
+  padding: 20px 0;
+}
+.sociales{
+	list-style: none;
+	padding: 0;
+	margin-top: 20px;
+}
+.sociales li{
+	display: inline-block;
+	float: none;
+	color: #fff;
+	font-size: 16px;
+	margin-right: 6px;
+}
+.sociales li a{
+	color: #fff;
+}
+.sociales li a .fa{
+  font-size: 22px;
+  position: relative;
+  top: 1px;
+  font-weight: 300;
+  margin: 0 3px;
+}
+.logo{
+	width: 177px;
+	height: 104px;
+	display: block;
+	margin: 0 auto;
+	position: relative;
+	background: url(../images/logo-nova-evolution.png) no-repeat;
+	background-size: 100%;
+}
+#evo-nav .menu-says,
+#evo-nav .close-says{
+  font-family: 'LilitaOne','futuregular', "Helvetica Neue", 'Open Sans', sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+  position: absolute;
+  right: 100%;
+  margin-right: 10px;
+  -webkit-transition: .25s ease-in-out;
+  -moz-transition: .25s ease-in-out;
+  -o-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
+}
+#evo-nav .close-says,
+#evo-nav.open .menu-says{
+	opacity: 0;
+}
+#evo-nav.open .close-says{
+	opacity: 1;
+}
+#evo-nav {
+  width: 28px;
+  height: 45px;
+  position: relative;
+  margin: 20px 0 0;
+  float: right;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  cursor: pointer;
+}
+#evo-nav span {
+  display: block;
+  position: absolute;
+  height: 4px;
+  width: 100%;
+  background: #fff;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .25s ease-in-out;
+  -moz-transition: .25s ease-in-out;
+  -o-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
+}
+#evo-nav span:nth-child(1) {
+  top: 0px;
+}
+
+#evo-nav span:nth-child(2),#evo-nav span:nth-child(3) {
+  top: 7px;
+}
+
+#evo-nav span:nth-child(4) {
+  top: 14px;
+}
+
+#evo-nav.open span:nth-child(1) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
+
+#evo-nav.open span:nth-child(2) {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+#evo-nav.open span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+#evo-nav.open span:nth-child(4) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
+.intro{
+	background: url(../images/header-bg.jpg) no-repeat top center scroll;
+	height: auto;
+	min-height: 80vh;
+}
+.intro-body{
+	display: flex;
+	min-height: 80vh;
+	justify-content: center;
+	align-items: flex-end;
+}
+.navbar>.container .navbar-brand {
+  margin-left: auto;
+  float: none;
+  margin: 0 auto;
+  display: inline-block;
+}
+.menu-evolution {
+  position: fixed;
+  right: 0;
+  height: 100%;
+  background: rgba(0,0,0,.7);
+  width: 100%;
+  z-index: 1000;
+  display: none;
+}
+.menu-evolution.open{
+	display: block;
+}
+.menu-evolution .navbar-collapse.collapse{
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background: none;
+	max-height: 70vh;
+	display: flex!important;
+	align-items: center;
+	justify-content: center;
+}
+.menu-evolution .navbar-collapse.collapse .navbar-nav{
+	display: block;
+	background: none;
+}
+.menu-evolution .navbar-collapse.collapse .navbar-nav > li{
+	float: none;
+	text-align: center;
+	margin-right: 0;
+}
+.navbar-nav > li > a{
+	margin-right: 0;
+  font-family: 'LilitaOne','futuregular', "Helvetica Neue", 'Open Sans', sans-serif;
+  font-size: 32px;
+  line-height: 36px;
+  color: #fff;
+  text-transform: uppercase;
+}
+.navbar-nav > li > a:hover,
+.navbar-nav > li > a:active,
+.navbar-nav > li > a:focus{
+	background: none;
+}
+.brand-subheading{
+	text-shadow: rgb(255, 255, 255) 2px 1px 0px;
+	font-size: 24px;
+	font-family: 'Open Sans', sans-serif;
+}
+.brand-heading{
+	text-shadow: rgb(255, 255, 255) 3px 2px 0px;
+  font-family: 'LilitaOne','futuregular', "Helvetica Neue", 'Open Sans', sans-serif;
+  font-size: 70px;
+}
+.intro-text{
+	font-weight: 400;
+	margin-bottom: 50px;
+	font-size: 22px;
+	line-height: 28px;
+}
+.intro-text strong{
+	font-weight: 800;
+}
+.bajate:before,
+.bajate:after{
+	content: "";
+	clear: both;
+	position: relative;
+	display: block;
+}
+.bajate{
+	display: flex;
+	align-items: flex-end;
+}
+#atributos{
+	background: url(../images/atributos-bg.jpg) no-repeat top center scroll;
+}
+#atributos h2{
+  font-family: 'LilitaOne','futuregular', "Helvetica Neue", 'Open Sans', sans-serif;
+  font-size: 36px;
+}
+.carousel h3{
+	font-weight: 300;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 38px;
+}
+.carousel h3 span{
+  font-family: 'LilitaOne','futuregular', "Helvetica Neue", 'Open Sans', sans-serif;
+  font-size: 52px;
+}
+#atributos .col-md-12 p{
+	font-size: 20px;
+	line-height: 24px;
+}
